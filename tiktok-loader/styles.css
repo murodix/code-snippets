@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .loader {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .loader::before, .loader::after {
+    content: '';
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    animation: cycle .8s infinite ease-in-out;
+    mix-blend-mode: multiply;
+  }
+
+  .loader::before {
+    background: #4de8f4;
+  }
+
+  .loader::after {
+    background: #fd3e3e;
+    animation-delay: -1s; 
+  }
+
+@keyframes cycle {
+  0% { left: -30px; }
+  25% { scale: 1.2; }
+  50% { left: 30px; }
+  75% { scale: .6; }
+  100% { left: -30px; }
+}

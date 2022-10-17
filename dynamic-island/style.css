@@ -1,0 +1,77 @@
+body {
+    background: black;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.iphone-layout {
+    display: flex;
+    justify-content: center;
+    width: 390px;
+    height: 800px;
+    border: solid 2px white;
+    border-radius: 60px;
+}
+
+
+
+
+.dynamic-island-container {
+    margin-top: 20px;
+    background: #0c0c0c;
+    color: white;
+    border-radius: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    scale: .5;
+    filter: blur(5px);
+    transition: all .5s ease-in-out;
+}
+
+.dynamic-island-container:hover {
+    filter: none;
+    scale: 1;
+
+}
+
+.dynamic-island-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    user-select: none;
+}
+
+.dynamic-island-profile-name p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.dynamic-island-profile-name span {
+   color: gray;
+}
+
+.dynamic-island-profile img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+
+.dynamic-island-actions img {
+    height: 40px;
+    margin-left: 5px;
+    cursor: pointer;
+} 
+
+.dynamic-island-actions img {
+    height: 40px;
+} 

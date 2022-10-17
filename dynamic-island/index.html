@@ -12,10 +12,14 @@
         <div class="dynamic-island">
             <div class="dynamic-island-container">
                 <div class="dynamic-island-profile">
-                    <img src="./images/profile.jpg" alt="">
-                    <div class="dynamic-island-profile-name">
-                        <span>mobile</span>
-                        <p>Ester Exposito</p>
+                    <img class="dynamic-island-image"src="./images/profile.jpg" alt="">
+                    <div class="dynamic-island-description">
+                        <div class="dynamic-island-mobile">
+                            mobile
+                        </div>
+                        <div class="dynamic-island-name">
+                            Ester Exposito
+                        </div>
                     </div>
                     
                 </div>
@@ -26,5 +30,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let island = document.querySelector('.dynamic-island-container');
+
+        island.onclick =  () => {
+            island.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

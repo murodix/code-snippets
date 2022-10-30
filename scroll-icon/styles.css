@@ -1,0 +1,71 @@
+body {
+  background: #181818;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+@-webkit-keyframes fallingDown {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fallingDown {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: gray;
+}
+
+.scrollDown {
+  height: 60px;
+  border: solid 1px gray;
+  opacity: 0.7;
+  width: 40px;
+  border-radius: 30px;
+  position: relative;
+}
+.scrollDown::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  translate: -50% -50%;
+  rotate: 90deg;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: gray;
+  -webkit-animation: fallingDown 2s infinite;
+          animation: fallingDown 2s infinite;
+}/*# sourceMappingURL=styles.css.map */
